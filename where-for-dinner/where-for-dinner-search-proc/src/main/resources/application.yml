@@ -1,6 +1,17 @@
+management:
+  health:
+    redis:
+      enabled: false
+
 spring: 
+  application:
+    name: where-for-dinner-search-proc
+
   cloud: 
     stream:
+      defaultBinder: rabbit
+      function:
+        definition: processSearch
       bindings: 
         processSearch-in-0: 
           destination: where-for-dinner-search-criteria
@@ -103,3 +114,37 @@ where-for-dinner:
       postalCode: 64112
       reservationURL: 'https://www.konagrill.com/reservations'
       
+---
+
+spring:
+  config.activate.on-profile: redis
+
+  data:
+    redis:
+      # Workaround for https://github.com/spring-cloud/spring-cloud-bindings/issues/87:
+      host: ${spring.redis.host}
+      password: ${spring.redis.password}
+      port: ${spring.redis.port}
+  
+management:
+  health:
+    redis:
+      enabled: true
+    
+---
+
+spring:
+  config.activate.on-profile: kafka
+  
+  cloud: 
+    stream:
+      defaultBinder: kafka
+
+---
+
+spring:
+  config.activate.on-profile: kinesis
+  
+  cloud: 
+    stream:
+      defaultBinder: kinesis

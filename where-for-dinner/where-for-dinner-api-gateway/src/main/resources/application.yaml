@@ -1,3 +1,5 @@
+spring.cloud.kubernetes.enabled: false
+
 where-for-dinner:
   namespace: ${spring.cloud.kubernetes.client.namespace}
   ui:
@@ -8,6 +10,9 @@ where-for-dinner:
     uri: http://where-for-dinner-availability.${where-for-dinner.namespace}/
 
 spring:
+  application:
+    name: where-for-dinner-api-gateway
+
   session:
     timeout: 60m
   cloud:
@@ -51,7 +56,7 @@ spring:
 
 ---
 spring:
-  profiles: local
+  config.activate.on-profile: local
 
 
 #Local profile forwards to local instances  
