@@ -11,6 +11,7 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  serviceClaims: 
   - name: rmq
     ref:
       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
@@ -18,7 +19,7 @@ spec:
       name: rmq-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-availability

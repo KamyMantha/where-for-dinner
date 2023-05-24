@@ -29,9 +29,9 @@ spec:
       value: "17"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-api-gateway
 ---
 apiVersion: carto.run/v1alpha1
@@ -73,9 +73,9 @@ spec:
       value: "17"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-search
 ---
 apiVersion: carto.run/v1alpha1
@@ -118,9 +118,9 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-search-proc
 ---
 apiVersion: carto.run/v1alpha1
@@ -163,9 +163,9 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-notify
 ---
 apiVersion: carto.run/v1alpha1
@@ -209,9 +209,9 @@ spec:
       cpu: "1.5"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-availability
 ---
 apiVersion: carto.run/v1alpha1
@@ -246,9 +246,9 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-ui
 ---
 apiVersion: carto.run/v1alpha1
@@ -281,7 +281,7 @@ spec:
       value: "17"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-crawler

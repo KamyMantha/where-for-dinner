@@ -19,7 +19,7 @@ spec:
       name: rmq-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-search

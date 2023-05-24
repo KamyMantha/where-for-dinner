@@ -15,9 +15,9 @@ spec:
   serviceClaims: null
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-api-gateway
 ---
 apiVersion: carto.run/v1alpha1
@@ -50,9 +50,9 @@ spec:
       name: db-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-search
 ---
 apiVersion: carto.run/v1alpha1
@@ -77,9 +77,9 @@ spec:
       name: rmq-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-search-proc
 ---
 apiVersion: carto.run/v1alpha1
@@ -104,9 +104,9 @@ spec:
       name: rmq-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-notify
 ---
 apiVersion: carto.run/v1alpha1
@@ -139,9 +139,9 @@ spec:
       name: db-where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-availability
 ---
 apiVersion: carto.run/v1alpha1
@@ -161,7 +161,7 @@ spec:
       app.kubernetes.io/part-of: where-for-dinner
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/KamyMantha/where-for-dinner
       ref:
-        branch: main
+        branch: master
     subPath: where-for-dinner-ui
