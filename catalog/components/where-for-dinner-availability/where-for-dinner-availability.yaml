@@ -30,4 +30,5 @@ spec:
   owner: where-for-dinner-team
   system: where-for-dinner
   definition:
-    $text: https://where-for-dinner.tap-lab-gke.kamymantha.ninja.com/api/availability/v3/api-docs/
+    $text: https://where-for-dinner.workloads.tap.tap-lab-gke.kamymantha.ninja/api/availability/v3/api-docs/
+    
