@@ -1,0 +1,11 @@
+site_name: 'Where For Dinner Documentation'
+repo_url: https://github.com/KamyMantha/where-for-dinner
+edit_uri: /master/plugins/techdocs-backend/examples/documented-component/docs
+
+nav:
+  - Home: README.md
+  - Deployment: TAPDeployment.md
+  - ServiceProvisioning : DynamicServiceProvisioning.md
+
+plugins:
+  - techdocs-core
