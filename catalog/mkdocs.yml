@@ -2,7 +2,6 @@ site_name: 'Where For Dinner Documentation'
 
 nav:
   - Home: index.md
-  - Deployment: TAPDeployment.md
 
 
 plugins:
