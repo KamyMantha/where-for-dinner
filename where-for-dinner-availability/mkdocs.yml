@@ -1,0 +1,7 @@
+site_name: where-for-dinner-availability
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

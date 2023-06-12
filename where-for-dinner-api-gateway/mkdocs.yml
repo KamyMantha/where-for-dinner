@@ -1,0 +1,7 @@
+site_name: where-for-dinner-api-gateway
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

@@ -1,0 +1,16 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: where-for-dinner-catalog-info
+  description: "Catalog for the 'Where for Dinner' application"
+  title: Combined monorepo for where for dinner app
+  annotations:
+    github.com/project-slug: KamyMantha/where-for-dinner
+    backstage.io/techdocs-ref: dir:.
+  tags: 
+    - nodejs
+spec:
+  type: service
+  owner: unknown
+  lifecycle: experimental
