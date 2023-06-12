@@ -32,7 +32,7 @@ Where for Dinner also has two optional components:
 
 The high level data flow looks like the following:
 
-![](doc/images/HungrymanHighLevelArch.png)
+![](images/HungrymanHighLevelArch.png)
 
 Note that the event channel protocols are not specified as they can be swapped out with different implementations.  By default, the application uses the RabbitMQ binding for Spring Cloud Streams, but could be swapped for any supported binding.  Because the channel end points are implements as Java `functions`, they are support `CloudEvents` and the event channels can be orchestrated through other mechanisms such as KNative eventing.  As you will see later on, there are provided deployment configurations in this repository for RabbitMQ service binding and KNative eventing.
 
@@ -40,7 +40,7 @@ Note that the event channel protocols are not specified as they can be swapped o
 
 The default build and deployment architecture uses Spring Cloud Streams as the asynchronous messaging implementation with RabbitMQ as the default binding.  The messaging topology is depicted in the following abridged architecture diagram: 
 
-![](doc/images/SCSMessaging.png)
+![](images/SCSMessaging.png)
 
 ### KNative Eventing 
 
@@ -48,6 +48,6 @@ The `kneventing` branch of the Where for Dinner repository contains build config
 
 The architecture still uses Spring Cloud Streams as the messaging implementation for initially emitting searches, and then a KNative source implementation is inserted to create a bridge between the Spring Cloud Streams binding and the downstream KNative eventing concepts.  For the RabbitMQ implementation, a KNative RabbitMQ Source is declared to read events from a RabbitMQ exchange and propagate them through KNative eventing down to the subscribing services.  The following is a diagram of the KNative event concepts used for Where for Dinner:
 
-![](doc/images/KNativeEventing.png)  
+![](images/KNativeEventing.png)  
 
 
