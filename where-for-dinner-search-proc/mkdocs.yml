@@ -1,4 +1,4 @@
-site_name: calculator-service
+site_name: where-for-dinner-search-proc
 
 nav:
   - Home: index.md

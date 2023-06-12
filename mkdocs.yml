@@ -5,13 +5,13 @@ nav:
 
 
   - Subdirectory docs:
-      - Where for dinner API Gateway: '!include .where-for-dinner-api-gateway/mkdocs.yml'
-      - Where for Dinner Availability: '!include .where-for-dinner-availability/mkdocs.yml'
-      - Where for dinner Crawler: '!include .where-for-crawler/mkdocs.yml'
-      - Where for Dinner Notify: '!include .where-for-dinner-notify/mkdocs.yml'
-      - Where for dinner Search: '!include .where-for-dinner-search/mkdocs.yml'
-      - Where for Dinner Search Procy: '!include .where-for-dinner-search-proc/mkdocs.yml'
-      - Where for dinner UI: '!include .where-for-ui/mkdocs.yml'
+      - Where for dinner API Gateway: '!include where-for-dinner-api-gateway/mkdocs.yml'
+      - Where for Dinner Availability: '!include where-for-dinner-availability/mkdocs.yml'
+      - Where for dinner Crawler: '!include where-for-dinner-crawler/mkdocs.yml'
+      - Where for Dinner Notify: '!include where-for-dinner-notify/mkdocs.yml'
+      - Where for dinner Search: '!include where-for-dinner-search/mkdocs.yml'
+      - Where for Dinner Search Procy: '!include where-for-dinner-search-proc/mkdocs.yml'
+      - Where for dinner UI: '!include where-for-dinner-ui/mkdocs.yml'
             
 
 plugins:
